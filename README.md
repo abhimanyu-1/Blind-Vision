@@ -27,5 +27,5 @@ For questions, suggestions, or issues, please contact [Abhimanyu](mailto:abhiman
 ## Running the Project
 run the following command:
 
-pip install -r requirements.txt
-python app.py
+- pip install -r requirements.txt
+- python app.py
