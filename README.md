@@ -29,3 +29,7 @@ run the following command:
 
 - pip install -r requirements.txt
 - python app.py
+
+
+![Workflow Diagram](workflow.png)
+
