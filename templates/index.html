@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blind Vision</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#" id="aboutLink">About</a>
+        </nav>
+    </header>
+    <section class="parallax">
+        
+        <img src="static/temp/hill1.png" id="hill1">
+        <img src="static/temp/hill2.png" id="hill2">
+        <img src="static/temp/hill3.png" id="hill3">
+        <img src="static/temp/hill4.png" id="hill4">
+        <img src="static/temp/hill5.png" id="hill5">
+    
+        <img src="static/temp/tree.png" id="tree">
+        <h2 id="text">Blind Vision</h2>
+        <img src="static/temp/leaf.png" id="leaf">
+        <img src="static/temp/plant.png" id="plant">
+    </section>
+
+    <section class="sec">
+        <h2>Blind Assistant System</h2>
+        <p>
+            Blindness poses significant challenges for millions of individuals worldwide, particularly in countries like India where the prevalence of blindness is notably high. 
+            According to the National Programme for Control of Blindness and Visual Impairment (NPCBVI), India is home to approximately 12 million blind people, constituting one-fourth of the global blind population. 
+            The types of blindness vary, encompassing congenital blindness from birth, acquired blindness due to diseases like cataracts and glaucoma, and injuries resulting in blindness. 
+            The struggles faced by blind individuals in India are multifaceted and pervasive. Limited access to quality healthcare, especially in rural areas, exacerbates preventable blindness due to lack of timely intervention and treatment. 
+            Furthermore, socio-economic factors such as poverty and inadequate education often hinder blind individuals from accessing proper rehabilitation services, assistive devices, and educational opportunities tailored to their needs. Discrimination and social stigma add another layer of challenge, impeding their integration into mainstream society and limiting employment prospects. 
+            Despite these obstacles, blind individuals in India demonstrate resilience and determination, advocating for inclusive policies, accessibility improvements, and equal opportunities. Non-governmental organizations (NGOs) and government initiatives strive to address these issues through awareness campaigns, skill development programs, and the implementation of disability-friendly policies. 
+            Nonetheless, the journey towards inclusivity and empowerment for blind individuals in India remains an ongoing struggle, necessitating continued efforts towards systemic change and societal acceptance.<br><br>
+        </p>
+        <div class="container">
+            <form action="/System/" method="post">
+                <button class="btn">System</button>
+            </form>
+            <form action="/Mobile" method="post">
+                <button class="btn">Mobile</button>
+            </form>
+            <form action="/upload" method="post" enctype="multipart/form-data" id="uploadForm">
+                <div class="container3">
+                    <!-- File input field -->
+                    <input type="file" name="ocr_file" id="upload" style="display: none;">
+                    <!-- Button to trigger file input field -->
+                    <label for="upload" class="btn">Choose File</label>
+                    <!-- Upload button -->
+                    <button type="submit" class="btn">Upload</button>
+                </div>
+            </form>
+            <!-- Hidden alert message -->
+        <div id="alertMessage" class="alert-message" style="display: none;"></div>
+
+            
+        </div>
+    </section>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
