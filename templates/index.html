@@ -7,31 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blind Vision</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
 </head>
 
 <body>
     <header>
-        <h2 class="logo">Logo</h2>
+        <h2 class="logo"></h2>
         <nav class="navigation">
             <a href="#" class="active">Home</a>
             <a href="#" id="aboutLink">About</a>
         </nav>
     </header>
     <section class="parallax">
-        
-        <img src="static/temp/hill1.png" id="hill1">
-        <img src="static/temp/hill2.png" id="hill2">
-        <img src="static/temp/hill3.png" id="hill3">
-        <img src="static/temp/hill4.png" id="hill4">
-        <img src="static/temp/hill5.png" id="hill5">
     
-        <img src="static/temp/tree.png" id="tree">
+       <img src="static/temp/person.png" id="hill1">
+        <img src="static/temp/circle.png" id="hill2">
+        <img src="static/temp/curve.png" id="hill3">
+        <img src="static/temp/logo.png" alt="Logo" class="logo">
+        <img src="static/temp/statue.png" id="hill3">
+    
+        
         <h2 id="text">Blind Vision</h2>
-        <img src="static/temp/leaf.png" id="leaf">
-        <img src="static/temp/plant.png" id="plant">
-    </section>
 
-    <section class="sec">
+        <img src="static/temp/person.png" id="plant"> 
+    </section>
+    <section class="sec" >
+        
         <h2>Blind Assistant System</h2>
         <p>
             Blindness poses significant challenges for millions of individuals worldwide, particularly in countries like India where the prevalence of blindness is notably high. 
@@ -42,6 +43,9 @@
             Despite these obstacles, blind individuals in India demonstrate resilience and determination, advocating for inclusive policies, accessibility improvements, and equal opportunities. Non-governmental organizations (NGOs) and government initiatives strive to address these issues through awareness campaigns, skill development programs, and the implementation of disability-friendly policies. 
             Nonetheless, the journey towards inclusivity and empowerment for blind individuals in India remains an ongoing struggle, necessitating continued efforts towards systemic change and societal acceptance.<br><br>
         </p>
+        
+        <img src="static/temp/person2.png" alt="Person 2 Image" class="person2-image">
+
         <div class="container">
             <form action="/System/" method="post">
                 <button class="btn">System</button>
@@ -55,6 +59,8 @@
                     <input type="file" name="ocr_file" id="upload" style="display: none;">
                     <!-- Button to trigger file input field -->
                     <label for="upload" class="btn">Choose File</label>
+                </div>
+                <div class="container2">
                     <!-- Upload button -->
                     <button type="submit" class="btn">Upload</button>
                 </div>
@@ -64,6 +70,7 @@
 
             
         </div>
+        
     </section>
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>
