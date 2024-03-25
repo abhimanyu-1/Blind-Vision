@@ -8,7 +8,7 @@
 }
 
 body{
-    background: #f9f9f9;
+    background: #000000;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -16,8 +16,8 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    padding: 30px 100px;
+    width: 50%;
+    padding: 40px 100px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -26,13 +26,13 @@ header{
 
 .logo{
     font-size: 2rem;
-    color: #359381;
+    color: #535353;
     pointer-events: none;
     margin-right: 270px;
 }
 .navigation a {
     text-decoration: none;
-    color: #359381;
+    color: #535353;
     padding: 6px 15px;
     border-radius: 20px;
     margin: 0 10px;
@@ -40,12 +40,12 @@ header{
 }
 .navigation a:hover,
 .navigation a.active{
-    background: #359381;
+    background: #535353;
     color: #fff;
 }
 
 .parallax{
-    position: relative;
+    position: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,8 +53,9 @@ header{
 }
 #text{
     position: absolute;
-    font-size: 5rem;
-    color: #fff;
+    font-size: 7rem;
+    margin-left: 90px;
+    color: #353535;
     text-shadow: 2px 2px 4px rgba(0,0,0,.2);
 }
 
@@ -69,7 +70,7 @@ header{
 .sec {
     position: relative;
     padding: 200px;
-    background: #144d43;
+    background: #000000;
 }
 
 
@@ -77,19 +78,23 @@ header{
     font-size: 3rem;
     color: #fff;
     margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
 }
 
 .sec p {
+    position: relative;
     font-size: 1rem;
     color: #fff;
     font-weight: 300;
+    z-index: 1;
 }
 
 
 .btn {
     display: inline-block;
     padding: 1rem 2.8rem;
-    background: #00816c;
+    background: #616161;
     border-radius: 4rem;
     box-shadow: 0 0 1rem rgba(250, 254, 253, 0.8);
     font-size: 1.6rem;
@@ -99,6 +104,9 @@ header{
     text-decoration: none;
     cursor:pointer;
     border-style: none;
+    position: relative;
+    z-index: 3;
+
 }
 .btn:hover{
     box-shadow: none;
@@ -109,17 +117,16 @@ header{
     align-items: center;
     margin-top: 50px;
 }
-
 .container2 {
     margin-bottom: 50px;
 }
 
 .container3 {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .container form {
-    margin-right: 40px; /* Adjust this value to increase/decrease the space between buttons */
+    margin-right: 80px; /* Adjust this value to increase/decrease the space between buttons */
 }
 .alert-message {
     position: fixed;
@@ -135,4 +142,14 @@ header{
     text-align: center;
     border-radius: 5px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); /* Add shadow effect */
+}
+.person2-image {
+    position: absolute;
+    top: 40%; 
+    left: 30%; 
+    transform: translate(-50%, -50%);
+     /* Adjust image size as needed */
+    height: 100%; 
+    padding-left: 937px;
+    z-index: 0; /* Set z-index to be between paragraphs and background */
 }
