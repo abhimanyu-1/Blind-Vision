@@ -6,6 +6,7 @@ from voice import *
 
 sys.path.append('Module-2')
 from OCR import *
+from OCR_Live import *
 
 sys.path.append('Module-3')
 from Image_Captioning import *
@@ -34,7 +35,7 @@ def cam():
         count += 1
         
         if mode == 0:
-            voice("Please activate any mode, press 1 for surrounding, press 2 for face recognition, press 3 for OCR")
+            voice("Please activate any mode, press 1 for surrounding, press 2 for face recognition, press 3 for OCR ,press 4 for live OCR ,  press 5 for restart")
             mode = 5
         elif mode == 5:
             pass  # Adjust according to your logic
@@ -60,6 +61,8 @@ def cam():
             else:
                 voice("No file found in the upload folder.")
                 mode = 5
+        elif mode == 4:
+            ocr_live(nm)
 
         cv2.imshow("frame", frame)
         key = cv2.waitKey(1)
@@ -77,6 +80,9 @@ def cam():
             prev_caption = ""  # Reset the previous caption
             voice('Restarted')
             mode = 5
+        elif key == 52:
+            voice("Live OCR mode activated")
+            mode = 4
         elif key == 27 or key == ord('q'):
             break
 
