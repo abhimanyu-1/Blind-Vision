@@ -14,7 +14,7 @@ from Image_Captioning import *
 sys.path.append('Module-4')
 from reco import *
 
-url = "http://192.168.1.3:8080///shot.jpg"  # URL for mobile camera feed
+url = "http://10.0.0.12:8080///shot.jpg"  # URL for mobile camera feed
 mode = 0
 count = 0
 prev_caption = ""  # Store the previous caption
