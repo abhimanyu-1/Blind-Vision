@@ -31,5 +31,5 @@ run the following command:
 - python app.py
 
 
-![Workflow Diagram](workflow.png)
+![Workflow Diagram](workflow.jpg)
 
