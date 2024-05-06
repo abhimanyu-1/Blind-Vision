@@ -13,5 +13,5 @@ def recognise(frame):
     frame = cv2.imread(frame, cv2.IMREAD_COLOR)
     face_locations, names = sfr.detect_known_faces(frame)
     for name in names:
-        #print(name)
+        print(name)
         voice(name)
