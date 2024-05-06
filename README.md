@@ -24,11 +24,13 @@ Contributions to the project are welcome! Feel free to fork the repository, make
 ## Support
 For questions, suggestions, or issues, please contact [Abhimanyu](mailto:abhimanyukesu15@gmail.com).
 
-## Running the Project
+## Run the Project
 run the following command:
 
 - pip install -r requirements.txt
 - python app.py
+
+##  System Architechture
 
 
 ![Workflow Diagram](workflow.jpg)
