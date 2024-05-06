@@ -53,9 +53,9 @@ header{
 }
 #text{
     position: absolute;
-    font-size: 7rem;
-    margin-left: 90px;
-    color: #353535;
+    font-size: 10rem;
+    margin-left: 163px;
+    color: #949494;
     text-shadow: 2px 2px 4px rgba(0,0,0,.2);
 }
 
@@ -95,7 +95,7 @@ header{
     display: inline-block;
     padding: 1rem 2.8rem;
     background: #616161;
-    border-radius: 4rem;
+    border-radius: rem;
     box-shadow: 0 0 1rem rgba(250, 254, 253, 0.8);
     font-size: 1.6rem;
     color: #ffffff;
@@ -145,7 +145,7 @@ header{
 }
 .person2-image {
     position: absolute;
-    top: 40%; 
+    top: 43%; 
     left: 30%; 
     transform: translate(-50%, -50%);
      /* Adjust image size as needed */
