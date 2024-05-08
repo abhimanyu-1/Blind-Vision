@@ -33,5 +33,5 @@ run the following command:
 ##  System Architechture
 
 
-![Workflow Diagram](workflow.jpg)
+![Workflow Diagram](workflow1.jpg)
 
